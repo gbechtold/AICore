@@ -23,7 +23,7 @@ Before you begin, ensure you have met the following requirements:
 1. Clone the repository:
 
    ```
-   git clone https://github.com/yourusername/aicore.git
+   git clone https://github.com/gbechtold/aicore.git
    cd aicore
    ```
 
