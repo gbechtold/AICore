@@ -1,30 +1,93 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AICore
 
-## Getting Started
+AICore is a powerful AI-driven chat application built with Next.js and OpenAI's GPT model. It provides a secure, interactive chat interface where users can engage with an AI assistant for various tasks and conversations.
 
-First, run the development server:
+## Features
 
-```bash
+- AI-powered chat interface
+- User authentication
+- Responsive design using Chakra UI
+- Server-side rendering with Next.js
+- Integration with OpenAI's GPT model
+
+## Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- Node.js 18.17 or later
+- npm (usually comes with Node.js)
+- An OpenAI API key
+
+## Installation
+
+1. Clone the repository:
+
+   ```
+   git clone https://github.com/yourusername/aicore.git
+   cd aicore
+   ```
+
+2. Install the dependencies:
+
+   ```
+   npm install
+   ```
+
+3. Create a `.env.local` file in the root directory and add the following environment variables:
+
+   ```
+   OPENAI_API_KEY=your_openai_api_key
+   AUTH_USERNAME=your_chosen_username
+   AUTH_PASSWORD=your_chosen_password
+   NEXTAUTH_URL=http://localhost:3000
+   NEXTAUTH_SECRET=some_random_string
+   ```
+
+   Optionally, you can also set:
+
+   ```
+   NEXT_PUBLIC_APP_NAME=YourAppName
+   NEXT_PUBLIC_APP_HEADER_COLOR=#your_header_color
+   NEXT_PUBLIC_APP_PREFIX_TEXT=Your AI assistant prefix
+   NEXT_PUBLIC_APP_POSTFIX_TEXT=Your AI assistant postfix
+   ```
+
+## Usage
+
+To run the development server:
+
+```
 npm run dev
-# or
-yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+To build the application for production:
 
-## Learn More
+```
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+To start the production server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+npm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Project Structure
 
-## Deploy on Vercel
+- `pages/`: Contains the main pages of the application
+  - `api/`: API routes for authentication and chat
+  - `auth/`: Authentication-related pages
+  - `chat.js`: Main chat interface
+  - `index.js`: Home page
+- `components/`: Reusable React components
+- `styles/`: CSS modules and global styles
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Contributions to AICore are welcome. Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
